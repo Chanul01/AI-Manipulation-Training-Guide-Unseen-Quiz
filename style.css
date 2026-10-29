@@ -1,0 +1,35 @@
+/* EDIT THIS FILE to change colours, font sizes or spacing. */
+:root{font-family:Arial,Helvetica,sans-serif;color:#222;background:#f7f8fa}
+*{box-sizing:border-box}body{margin:0;font-size:15px;line-height:1.55}
+header{background:#fff;border-bottom:1px solid #dadde3;display:flex;justify-content:space-between;gap:12px;padding:14px max(20px,calc((100% - 1200px)/2))}
+main{max-width:1200px;margin:18px auto;padding:0 14px 40px}
+h1{font-size:26px;line-height:1.2}h2{font-size:19px;margin:0 0 12px}h3{font-size:16px;margin:16px 0 5px}
+.panel,.conversation,.learning,.before{border:1px solid #cfd5e0;border-radius:7px;background:white;padding:20px}
+.panel{max-width:920px;margin:auto}
+.before{background:#f5f0ff;border-color:#bd9cff;margin-bottom:12px;padding:12px 16px}
+.before p{margin:3px 0}.layout{display:grid;grid-template-columns:1.15fr 1fr;gap:14px;align-items:start}
+.conversation{min-width:0}.learning{margin-bottom:12px}.learning section{margin-bottom:14px}
+.chat{display:flex;flex-direction:column;gap:12px;padding:8px 0}
+.message{max-width:85%;align-self:flex-start}.message.user{align-self:flex-end;text-align:right}
+.message p{margin:3px 0;background:#f0f2f6;padding:10px 12px;border-radius:8px;white-space:pre-wrap}
+.message.user p{background:#ddeafd}.speaker{font-size:12px;color:#555;font-weight:700}
+.caption,.small,.note{font-size:13px;color:#5b6069}
+.options{display:grid;gap:8px}.option{background:#fff;text-align:left;border:1px solid #cbd1db;padding:10px 12px;border-radius:6px;color:#222;font:inherit;cursor:pointer}
+.option:hover:not(:disabled){background:#eff4fd}.option.selected{border:2px solid #2764a6;background:#e6f1ff;font-weight:600}.option:disabled{cursor:default}
+.answer,.tip{background:#e9f4ec;border-left:4px solid #3b9c5c;padding:10px 14px;margin:12px 0}
+.answer.incorrect{background:#fff2ec;border-color:#bf6b3d}mark{background:#ffec79;padding:0 2px}
+.actions{display:flex;gap:9px;flex-wrap:wrap;margin:18px 0}
+button.primary,button.secondary{padding:10px 16px;border-radius:6px;border:1px solid #285cab;background:#285cab;color:white;font:inherit;cursor:pointer}
+button.secondary{background:white;color:#285cab}button:disabled{opacity:.45;cursor:not-allowed}
+.quiz-intro{background:#eef4ff;border:1px solid #bdcee9;border-radius:6px;padding:12px 15px;margin-bottom:15px}
+.quiz-status{margin:12px 0;color:#4e5562}
+.question-block{border-top:1px solid #e3e5eb;padding-top:14px;margin-top:16px}.question-block h3{margin-top:2px}
+.result-card{background:white;border:1px solid #d5dbe3;border-radius:7px;padding:14px;margin:12px 0}.result-card p{margin:6px 0}
+.status-good{color:#186d3b}.status-bad{color:#ae3838}
+/* Usability enhancements */
+button:focus-visible,summary:focus-visible{outline:3px solid #dd9a00;outline-offset:3px}
+.quiz-help{margin-top:12px;padding:9px 12px;border:1px solid #bdcee9;border-radius:6px;background:white}
+.quiz-help summary,.answer-review summary{cursor:pointer;font-weight:bold;color:#204a7e;padding:5px 0}
+.answer-review{border:1px solid #d5dbe3;border-radius:7px;margin-top:18px;padding:12px}
+#quizError:not(:empty){background:#fff2ec;border-left:4px solid #ae3838;padding:12px 15px;margin:12px 0}
+@media(max-width:800px){.layout{grid-template-columns:1fr}.panel,.conversation,.learning{padding:15px}main{margin-top:12px}header{padding:12px 14px}.message{max-width:90%}}
